@@ -28,6 +28,8 @@ def main():
     
     # Fills screen with color black.
     screen.fill("black")
+    # Updates player before re-rendering.
+    player.update(dt)
     # Re-render player on screen.
     player.draw(screen)
     # Refreshes screen.
